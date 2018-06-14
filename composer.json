@@ -1,0 +1,44 @@
+{
+    "name": "yii-ui/yii2-materialize-select2",
+    "description": "Select2 Widget for Yii 2 with Materialize styles",
+    "keywords": [
+        "yii2",
+        "yii-ui",
+        "materialize",
+        "ui",
+        "select2",
+        "extension",
+        "widget",
+        "select2",
+        "form",
+        "dropdown",
+        "jquery",
+        "plugin"
+    ],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "homepage": "https://www.yii-ui.com/yii2-materialize-select2",
+    "support": {
+        "issues": "https://github.com/yii-ui/yii2-materialize-select2/issues",
+        "source": "https://github.com/yii-ui/yii2-materialize-select2"
+    },
+    "authors": [
+        {
+            "name": "Christoph Möke",
+            "email": "christophmoeke@gmail.com",
+            "role": "Project Leader"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.0.0",
+        "yiisoft/yii2": "~2.0.15",
+        "npm-asset/select2": "~4.0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "yiiui\\yii2materializeselect2\\": "src"
+        }
+    }
+}
