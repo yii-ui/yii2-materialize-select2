@@ -1,4 +1,4 @@
-Select2 Widget for Yii 2 with Materialize styles
+[![Yii UI](https://avatars1.githubusercontent.com/u/22790740?s=60)](https:://www.yii-ui.com/) Select2 Widget for Yii 2 with Materialize styles
 ================================================
 
 [![Latest Stable Version](https://poser.pugx.org/yii-ui/yii2-materialize-select2/version)](https://packagist.org/packages/yii-ui/yii2-materialize-select2)
