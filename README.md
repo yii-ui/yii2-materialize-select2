@@ -3,7 +3,7 @@ Select2 Widget for Yii 2 with Materialize styles
 
 [![Latest Stable Version](https://poser.pugx.org/yii-ui/yii2-materialize-select2/version)](https://packagist.org/packages/yii-ui/yii2-materialize-select2)
 [![Total Downloads](https://poser.pugx.org/yii-ui/yii2-materialize-select2/downloads)](https://packagist.org/packages/yii-ui/yii2-materialize-select2)
-[![Code Climate](https://codeclimate.com/github/yii-ui/yii2-rubaxa-sortable/badges/gpa.svg)](https://codeclimate.com/github/yii-ui/yii2-materialize-select2)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f8fa3c129287f7c567aa/maintainability)](https://codeclimate.com/github/yii-ui/yii2-materialize-select2/maintainability)
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 [![License](https://poser.pugx.org/yii-ui/yii2-materialize-select2/license)](https://packagist.org/packages/yii-ui/yii2-materialize-select2)
 
@@ -50,7 +50,7 @@ echo $form->field($model, 'attribute')->widget(Select2::class, [
 // as widget 
 Select2::widget([
     'name' => 'input-name',
-    'name' => 2,
+    'value' => 2,
     'items' => [1 => 'Apple', 2 => 'Banana'],
     'options' => [
         'placeholder' => 'Select your favourite',
