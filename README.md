@@ -16,27 +16,22 @@ Installation
 The preferred way to install this extension is through [composer](https://getcomposer.org/download/).
 
 Either run
-
 ```
 php composer.phar require yii-ui/yii2-materialize-select2
 ```
-
 or add
-
 ```
-"yii-ui/yii2-materialize-select2": "~1.0.0"
+"yii-ui/yii2-materialize-select2": "~1.1.0"
 ```
-
 to the require section of your `composer.json` file.
 
 Usage
 -----
 
+as active form element:
 ```php 
 use yiiui\yii2materializeselect2\Select2:
 
-
-// with \yii\widgets\ActiveForm;
 echo $form->field($model, 'attribute')->widget(Select2::class, [
     'items' => [1 => 'Apple', 2 => 'Banana'],
     'options' => [
@@ -46,8 +41,10 @@ echo $form->field($model, 'attribute')->widget(Select2::class, [
         'allowClear' => true
     ],
 ]);
-    
-// as widget 
+```
+
+or as widget:
+```php  
 Select2::widget([
     'name' => 'input-name',
     'value' => 2,
@@ -57,13 +54,12 @@ Select2::widget([
     ],
     'clientOptions' => [
         'allowClear' => true
-    ],    
+    ],
 ]);
 ```
 
-
 More [Examples](https://www.yii-ui.com/yii2-materialize-select2) will be added soon at https://www.yii-ui.com/yii2-materialize-select2.
-For plugin configuration see Materialize [Documentation](http://next.materializecss.com/).
+For plugin configuration see Select2 [Documentation](https://select2.org/).
 
 Documentation
 ------------
