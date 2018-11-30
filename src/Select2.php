@@ -4,6 +4,7 @@ namespace yiiui\yii2materializeselect2;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
+use yii\web\JsExpression;
 use yii\web\View;
 use yii\widgets\InputWidget;
 
@@ -60,6 +61,11 @@ class Select2 extends InputWidget
     protected function registerPlugin()
     {
         $id = $this->options['id'];
+
+        if (!isset($this->clientOptions['dropdownParent'])) {
+            $this->clientOptions['dropdownParent'] = new JsExpression('jQuery(jQuery(\'#'.$id.'\').parents(\'.modal-content, body\')[0])');
+        }
+
         $options = empty($this->clientOptions) ? '' : Json::htmlEncode($this->clientOptions);
         $js = ['jQuery(\'#'.$id.'\').select2('.$options.');'];
 

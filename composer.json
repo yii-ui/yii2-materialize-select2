@@ -36,9 +36,25 @@
         "yiisoft/yii2": "~2.0.15",
         "bower-asset/select2": "~4.0.5"
     },
+    "require-dev": {
+        "matthiasmullie/minify": "^1.3"
+    },
+    "scripts": {
+        "publish": [
+            "command -v sass >/dev/null 2>&1 || { echo >&2 \"\\033[0;31mError: sass is not installed. Please run 'npm install -g sass'\"; exit 1; } && echo \"\\033[0;32msass is installed\\033[0m\";",
+            "command -v postcss >/dev/null 2>&1 || { echo >&2 \"\\033[0;31mError: postcss is not installed. Please run 'npm install -g postcss-cli autoprefixer'\"; exit 1; } && echo \"\\033[0;32mpostcss is installed\\033[0m\";",
+            "sass src/assets/css/select2materialize.scss | postcss --use autoprefixer > src/assets/css/select2materialize.css && ./vendor/bin/minifycss src/assets/css/select2materialize.css > src/assets/css/select2materialize.min.css"
+        ]
+    },
     "autoload": {
         "psr-4": {
             "yiiui\\yii2materializeselect2\\": "src"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }

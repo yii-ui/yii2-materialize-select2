@@ -16,6 +16,9 @@ nbproject
 # windows thumbnail cache
 Thumbs.db
 
+# sass cache
+/.sass-cache
+
 # composer vendor dir
 /vendor
 
