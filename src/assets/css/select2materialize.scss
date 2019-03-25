@@ -300,6 +300,11 @@ $input-border: 1px solid #9e9e9e !default;
 
             li {
                 list-style: none;
+                line-height: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                padding-top: 6px;
+                padding-bottom: 6px;
             }
         }
 
