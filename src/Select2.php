@@ -41,7 +41,7 @@ class Select2 extends InputWidget
     public function init() {
         parent::init();
 
-        Html::addCssClass($this->options, 'browser-default');
+        Html::addCssClass($this->options, 'browser-default select2-select');
         Html::addCssStyle($this->options, ['width' => '100%'], false);
 
         if ($this->allowHtml && empty($this->clientOptions['escapeMarkup'])) {
